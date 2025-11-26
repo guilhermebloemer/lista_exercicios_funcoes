@@ -7,11 +7,21 @@
     */
 
     //ENTRADA
+    const palavra = prompt("Insira uma palavra").toLowerCase();
+    const vogais = "aeiou"
 
+    function vgs(palavra){
+        return palavra.split("")
+        .filter(letra => vogais.includes(letra)).length;
+
+    }
 
     //PROCESSAMENTO
 
+    const totalVogais = vgs(palavra)
 
+
+    alert(totalVogais)
     //SAÍDA
 
 </script>
