@@ -6,11 +6,20 @@
     */
 
     //ENTRADA
-
+    let numeroInteiro = Number(prompt(`Insira um número inteiro:`));
 
     //PROCESSAMENTO
+    while ((!Number.isInteger(numeroInteiro)) || isNaN(numeroInteiro)) {
+        numeroInteiro = Number(prompt(`Insira um número inteiro:`));
+    }
 
+    function calculaCubo(nrInteiro) {
+        return (nrInteiro ** 3);
+    }
+
+    const valorCubo = calculaCubo(numeroInteiro);
 
     //SAÍDA
+    alert(`O cubo de ${numeroInteiro} é ${valorCubo}`);
 
 </script>

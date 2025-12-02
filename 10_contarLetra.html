@@ -5,12 +5,28 @@
     *A frase (ou palavra) e a letra devem ser fornecidas pelo usuário.
     */
 
-    //ENTRADA
+    // ENTRADA
+    let frase = prompt(`Informe uma frase: `);
+    let letra = prompt(`Informe a letra que deseja contar: `);
 
+    // PROCESSAMENTO
+    function contarLetra(frase, letra) {
+        let fraseMinuscula = frase.toLowerCase();
+        let letraMinuscula = letra.toLowerCase();
 
-    //PROCESSAMENTO
+        let contador = 0;
 
+        for (let i = 0; i < fraseMinuscula.length; i++) {
+            if (fraseMinuscula[i] === letraMinuscula) {
+                contador++;
+            }
+        }
+        return contador;
+    }
 
-    //SAÍDA
+    let resultado = contarLetra(frase, letra);
+
+    // SAÍDA
+    alert(`A letra ${letra}, aparece ${resultado} vezes na frase.`);
 
 </script>

@@ -5,12 +5,17 @@
     C = (F - 32) * 5 / 9
     */
 
-    //ENTRADA
+    let fahrenheit = Number(prompt(`Insira uma temperatura em graus Fahrenheit:`));
+    let temperaturaCelsius = 0;
 
+    // PROCESSAMENTO
 
-    //PROCESSAMENTO
+    function fahrenheitParaCelsius(grausF) {
+        temperaturaCelsius = (grausF - 32) * 5 / 9;
+    }
 
-
-    //SAÍDA
+    // SAÍDA
+    fahrenheitParaCelsius(fahrenheit);
+    alert(`${fahrenheit}° Fahrenheit são ${temperaturaCelsius}° Celsius.`);
 
 </script>

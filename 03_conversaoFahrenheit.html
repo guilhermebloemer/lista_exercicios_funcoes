@@ -6,11 +6,19 @@
     */
 
     //ENTRADA
-
+    let celcius = Number(prompt(`Insira uma temperatura em graus celcius:`));
+    let temperaturaFahrenheit = 0;
 
     //PROCESSAMENTO
 
+    function celciusParaFahrenheit(graus) {
+        temperaturaFahrenheit = (9 * graus + 160) / 5;
+    }
 
     //SAÍDA
+
+    celciusParaFahrenheit(celcius);
+    alert(`${celcius}° celcius são ${temperaturaFahrenheit}° fahrenheit.`);
+
 
 </script>

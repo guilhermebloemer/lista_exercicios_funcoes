@@ -5,12 +5,20 @@
     A = (b * h) / 2
     */
 
-    //ENTRADA
+    // ENTRADA
+    let base = Number(prompt(`Insira a base do triângulo:`));
+    let altura = Number(prompt(`Insira a altura do triângulo:`));
 
+    // PROCESSAMENTO
 
-    //PROCESSAMENTO
+    function areaTriangulo(b, h) {
+        return (b * h) / 2;
+    }
 
+    let area = areaTriangulo(base, altura);
 
-    //SAÍDA
+    // SAÍDA    
+    
+    alert(`A área do triângulo é ${area}.`);
 
 </script>
